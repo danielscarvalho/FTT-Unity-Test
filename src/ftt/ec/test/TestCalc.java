@@ -1,6 +1,5 @@
 package ftt.ec.test;
 
-import static org.junit.Assume.assumeTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
 /*
