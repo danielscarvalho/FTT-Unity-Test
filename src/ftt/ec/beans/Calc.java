@@ -1,4 +1,4 @@
-package ftt.ec;
+package ftt.ec.beans;
 
 public class Calc {
 	

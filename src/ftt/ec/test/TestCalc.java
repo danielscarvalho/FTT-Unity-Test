@@ -1,4 +1,4 @@
-package ftt.ec;
+package ftt.ec.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import ftt.ec.beans.Calc;
 
 @DisplayName("Test Calc")
 class TestCalc {
@@ -28,11 +30,11 @@ class TestCalc {
 	void testFloat() {
 		assertEquals(2.5f, c.add(1.f, 1.5f));
 	}
-
+/*
 	@Test
 	@DisplayName("add - float 2")
 	void testFloat2() {
 		assertEquals(1f, c.add(1f, -100f));
 	}
-	
+	*/
 }
