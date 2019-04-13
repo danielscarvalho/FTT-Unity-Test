@@ -1,5 +1,6 @@
 package ftt.ec.test;
 
+import static org.junit.Assume.assumeTrue;
 import static org.junit.jupiter.api.Assertions.*;
 
 /*
@@ -19,6 +20,8 @@ class TestCalc {
 	
 	Calc c = new Calc();
 
+	//Assert reference: https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html
+	
 	@Test
 	@DisplayName("add - int")
 	void testInt() {
@@ -30,7 +33,14 @@ class TestCalc {
 	void testFloat() {
 		assertEquals(2.5f, c.add(1.f, 1.5f));
 	}
-/*
+
+	@Test
+	@DisplayName("add - float 3")
+	void testFloat3() {
+		assertTrue(115f == c.add(10f, 105f));
+	}
+	
+	/*
 	@Test
 	@DisplayName("add - float 2")
 	void testFloat2() {
