@@ -14,10 +14,10 @@ import org.junit.jupiter.api.Test;
 
 import ftt.ec.beans.Calc;
 
-@DisplayName("Test Calc")
+@DisplayName("FTT Test Calc")
 class TestCalc {
 	
-	Calc c = new Calc();
+	Calc c = new Calc();//Instância da classe a ser testada!!
 
 	//Assert reference: https://junit.org/junit5/docs/current/api/org/junit/jupiter/api/Assertions.html
 	
@@ -37,6 +37,24 @@ class TestCalc {
 	@DisplayName("add - float 3")
 	void testFloat3() {
 		assertTrue(115f == c.add(10f, 105f));
+	}
+	
+	@Test
+	@DisplayName("Pi 13 Teste #1")
+	void testPi1() {
+		assertTrue(c.prime(13));
+	}
+	
+	@Test
+	@DisplayName("Pi 300 Teste #2")
+	void testPi2() {
+		assertTrue(!c.prime(200));
+	}
+
+	@Test
+	@DisplayName("Pi400 Teste #3")
+	void testPi3() {
+		assertFalse(c.prime(400));
 	}
 	
 	/*
